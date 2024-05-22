@@ -22,14 +22,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/application_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginBottom="16dp"
-            android:text="Conversor de Moedas" />
-
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/currency_selection_input_container"
             style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
@@ -46,6 +38,14 @@
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/application_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:text="Conversor de Moedas" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/load_currency_state"
@@ -85,7 +85,8 @@
             android:id="@+id/currency_rates_state"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:visibility="gone" />
+            android:visibility="gone"
+            tools:listitem="@layout/item_cards" />
 
     </LinearLayout>
 
